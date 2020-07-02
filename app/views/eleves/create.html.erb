@@ -1,2 +1,6 @@
-<h1>Eleves#create</h1>
-<p>Find me in app/views/eleves/create.html.erb</p>
+<h1>Ajouter un élève</h1>
+<%= simple_form_for @eleve do |f| %>
+  <%= f.input :nom %>
+  <%= f.input :prenom %>
+  <%= f.button :submit %>
+<% end %>
